@@ -7,7 +7,7 @@
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
+    <h1>Giridhar Gowda G A</h1>
     <nav>
       <a href="#profile">Profile</a> |
       <a href="#skills">Skills</a> |
@@ -20,15 +20,81 @@
     <a href="assets/resume/resume.pdf" download>Download Resume</a>
   </header>
 
-  <main>
-    <section id="profile"></section>
-    <section id="skills"></section>
-    <section id="education"></section>
-    <section id="projects"></section>
-    <section id="achievements"></section>
-    <section id="certifications"></section>
-    <section id="contact"></section>
-  </main>
+  
+   <main>
+  <section id="profile">
+    <div class="profile-wrapper">
+      <img src="assets/images/profile.jpg" alt="Profile photo of Your Name" class="profile-photo">
+      <div class="profile-text">
+        <h2>About Me</h2>
+        <p><strong>Giridhar</strong> — currently a <em>Bachelor of Engineering</em> student at <strong>Malnad College of Engineering</strong> (Year: 2023–2027). Interests: Web development, algorithms, and problem solving. I enjoy building small apps that solve real problems and learning new web technologies.</p>
+        <p><strong>Contact:</strong> <a href="mailto:youremail@example.com">giridhargowda2506@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skill-list">
+      <li>HTML / XHTML — Semantic markup, accessibility</li>
+      <li>CSS — Flexbox, Grid, responsive design</li>
+      <li>JavaScript — DOM, fetch/AJAX, ES6</li>
+      <li>XML + XSLT — data representation & transformation</li>
+      <li>PHP & MySQL — server-side scripting and databases</li>
+      <li>Git & GitHub — version control, GitHub Pages</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <article class="education-item">
+      <h3>[Your Degree] — [Your College]</h3>
+      <p><strong>Years:</strong> 20XX — Present (or 20XX–20XX)</p>
+      <p><strong>Relevant coursework:</strong> Web Programming, Database Systems, Data Structures, Operating Systems</p>
+      <p><strong>CGPA / Percentage:</strong> [if you want to show it]</p>
+    </article>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Project cards will be filled in Step 4. (You can leave this as-is for now.)</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ol>
+      <li>Award / Prize 1 (Year)</li>
+      <li>Hackathon / Competition — Position (Year)</li>
+    </ol>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Certification name — Issuer — Year</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm" method="post" action="php/contact.php" onsubmit="return validateAndSend(event)">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required maxlength="100">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required maxlength="1000"></textarea>
+
+      <button type="submit">Send</button>
+      <p id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+    <p>Or email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  </section>
+</main>
+
+
 
   <script src="assets/js/script.js"></script>
 </body>
