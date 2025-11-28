@@ -6,3 +6,8 @@ nav a { color: #e6f2ff; text-decoration: none; margin-right: .5rem; }
 .profile-photo { width:120px; height:120px; object-fit:cover; border-radius:50%; border:3px solid #fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
 .profile-text h2 { margin-bottom: .3rem; }
 .skill-list { list-style: none; padding-left: 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:.5rem; }
+
+.project-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem; }
+.project-card { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+.project-card h3 { margin:0 0 .4rem 0; }
+.proj-desc { color:#333; margin-bottom:.5rem; }
